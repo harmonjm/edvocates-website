@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-26.5 -540 645 645" role="img" aria-label="Edvocates"><title>Edvocates</title>
+  <defs>
+    <path id="feL" d="M447 -214L134 -167L128 -279L359 -317Q357 -337 339 -357Q321 -377 283 -377L283 -377Q243 -377 216.5 -351Q190 -325 188 -277L188 -277L194 -193Q204 -147 239.5 -129Q275 -111 319 -111L319 -111Q361 -111 399 -122Q437 -133 460 -146L460 -146Q476 -136 487 -118Q498 -100 498 -80L498 -80Q498 -47 473.5 -25.5Q449 -4 406 6Q363 16 307 16L307 16Q229 16 166.5 -13.5Q104 -43 67.5 -102Q31 -161 31 -250L31 -250Q31 -316 52.5 -364Q74 -412 110 -442Q146 -472 190.5 -486.5Q235 -501 282 -501L282 -501Q353 -501 406 -473.5Q459 -446 489 -398.5Q519 -351 519 -289L519 -289Q519 -255 500 -237Q481 -219 447 -214L447 -214"/>
+    <linearGradient id="feHolo" gradientUnits="userSpaceOnUse" x1="31" y1="-501" x2="519" y2="100">
+      <stop offset="0" stop-color="#FFE45E"/><stop offset=".36" stop-color="#FF2E86"/><stop offset=".68" stop-color="#7B2FF7"/><stop offset="1" stop-color="#00C2B8"/>
+    </linearGradient>
+    <clipPath id="feClip"><use href="#feL"/></clipPath>
+    <pattern id="feStripes" width="160" height="160" patternUnits="userSpaceOnUse" patternTransform="rotate(32)"><rect width="45" height="160" fill="#fff" fill-opacity=".28"/></pattern>
+    <linearGradient id="feGloss" gradientUnits="userSpaceOnUse" x1="0" y1="-501" x2="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".38" stop-color="#fff" stop-opacity=".36"/><stop offset=".6" stop-color="#fff" stop-opacity=".05"/><stop offset=".68" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <mask id="feRim" maskUnits="userSpaceOnUse" x="-969" y="-1501" width="2488" height="2501"><use href="#feL" fill="#fff"/><use href="#feL" fill="#000" transform="translate(28 28)"/></mask>
+  </defs>
+  <use href="#feL" transform="translate(42 50)" fill="#1A1033" stroke="#1A1033" stroke-width="70" stroke-linejoin="round"/>
+  <use href="#feL" fill="#1A1033" stroke="#1A1033" stroke-width="70" stroke-linejoin="round"/>
+  <use href="#feL" fill="url(#feHolo)"/>
+  <g clip-path="url(#feClip)">
+    <rect x="-969" y="-1501" width="2488" height="2501" fill="url(#feStripes)"/>
+    <rect x="-969" y="-1501" width="2488" height="2501" fill="url(#feGloss)"/>
+  </g>
+  <use href="#feL" fill="#fff" fill-opacity=".6" mask="url(#feRim)"/></svg>
