@@ -1,5 +1,6 @@
 {
   "name": "edvocates-website",
+  "account_id": "44afe7c2e9847285fb697df32b92ae82",
   "compatibility_date": "2026-09-12",
   "assets": {
     "directory": "./public"
