@@ -20,6 +20,16 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <!-- PostHog web analytics: page views only, kept in memory (no cookies or local storage). -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset identify get_distinct_id".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_kYpqgbaCDJi4JeUQjfFLATJrvVNEmpqcBXWxJi4p8hLq', {
+      api_host: 'https://us.i.posthog.com',
+      persistence: 'memory',
+      person_profiles: 'identified_only',
+      disable_session_recording: true
+    });
+  </script>
 </head>
 <body>
   <a class="skip btn" href="#main">Skip to content</a>
@@ -40,7 +50,7 @@
       <p class="eyebrow">Legal</p>
       <h1>Privacy Policy</h1>
       <p class="lede">This covers Keepr Parent and Keepr Student, the two iPhone apps made by Edvocates. The short version: Keepr reads your school's Canvas data, keeps it on your phone, and doesn't have a server to lose it from. If you share with family, your messages sync through your own iCloud, not through us.</p>
-      <p class="legal-updated">Effective September 24, 2026</p>
+      <p class="legal-updated">Effective September 25, 2026</p>
 
       <div class="legal-body">
         <section aria-labelledby="who-title">
@@ -67,7 +77,7 @@
           <ul>
             <li><strong>No Keepr account.</strong> There's no sign-up, no email or password to create, and nothing tying your identity to us.</li>
             <li><strong>No Keepr server.</strong> Keepr talks directly to Canvas from your phone. There's no Edvocates-run backend in between that could see, log, or store your grades or your messages.</li>
-            <li><strong>No analytics or tracking SDKs.</strong> We don't embed any third-party analytics, advertising, or crash-reporting tools. Any diagnostic data comes only from Apple's own optional, user-controlled device analytics, which Edvocates doesn't separately collect.</li>
+            <li><strong>No analytics or tracking SDKs in the apps.</strong> We don't embed any third-party analytics, advertising, or crash-reporting tools. Any diagnostic data comes only from Apple's own optional, user-controlled device analytics, which Edvocates doesn't separately collect.</li>
             <li><strong>No selling or sharing data.</strong> We have nothing to sell, and no data-sharing arrangements with advertisers or data brokers.</li>
           </ul>
         </section>
@@ -129,6 +139,12 @@
             <li><strong>Stop sharing.</strong> The parent who set up family sharing can remove someone or stop sharing entirely from Settings, and anyone who was invited can leave. Either way, it's done in the app.</li>
             <li><strong>Turn off notifications.</strong> Use iOS Settings to control what Keepr can alert you about, same as any other app.</li>
           </ul>
+        </section>
+
+        <section aria-labelledby="website-title">
+          <h2 id="website-title">This website</h2>
+          <p>Everything above is about the Keepr apps, which don't use any analytics. This website, edvocates.com, is different: it uses PostHog to count page views and see which pages are useful. PostHog records the page you visited, where you came from, and your general location, browser, and device type, based on your IP address.</p>
+          <p>It doesn't set cookies or store anything on your device, so each visit is counted on its own and we can't tell whether you've been here before. There are no ads, and we don't sell or share this data.</p>
         </section>
 
         <section aria-labelledby="changes-title">
