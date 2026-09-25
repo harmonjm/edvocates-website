@@ -39,8 +39,8 @@
     <div class="wrap">
       <p class="eyebrow">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="lede">This covers Keepr Parent and Keepr Student, the two iPhone apps made by Edvocates. The short version: Keepr reads your school's Canvas data, keeps it on your phone, and doesn't have a server to lose it from.</p>
-      <p class="legal-updated">Effective September 12, 2026</p>
+      <p class="lede">This covers Keepr Parent and Keepr Student, the two iPhone apps made by Edvocates. The short version: Keepr reads your school's Canvas data, keeps it on your phone, and doesn't have a server to lose it from. If you share with family, your messages sync through your own iCloud, not through us.</p>
+      <p class="legal-updated">Effective September 24, 2026</p>
 
       <div class="legal-body">
         <section aria-labelledby="who-title">
@@ -66,7 +66,7 @@
           <h2 id="not-collect-title">What Keepr doesn't do</h2>
           <ul>
             <li><strong>No Keepr account.</strong> There's no sign-up, no email or password to create, and nothing tying your identity to us.</li>
-            <li><strong>No Keepr server.</strong> Keepr talks directly to Canvas from your phone. There's no Edvocates-run backend in between that could see, log, or store your grades.</li>
+            <li><strong>No Keepr server.</strong> Keepr talks directly to Canvas from your phone. There's no Edvocates-run backend in between that could see, log, or store your grades or your messages.</li>
             <li><strong>No analytics or tracking SDKs.</strong> We don't embed any third-party analytics, advertising, or crash-reporting tools. Any diagnostic data comes only from Apple's own optional, user-controlled device analytics, which Edvocates doesn't separately collect.</li>
             <li><strong>No selling or sharing data.</strong> We have nothing to sell, and no data-sharing arrangements with advertisers or data brokers.</li>
           </ul>
@@ -75,6 +75,7 @@
         <section aria-labelledby="storage-title">
           <h2 id="storage-title">Where your data lives</h2>
           <p>Your Canvas access token is stored in your iPhone's secure Keychain. Grades, assignments, and announcements that Keepr fetches are cached locally on your device so the app works quickly and offline. None of this is transmitted to, or stored by, Edvocates. If you delete Keepr from your phone, that local data goes with it.</p>
+          <p>If you turn on family sharing, the messages you share are also stored in iCloud, as described below. That's Apple's storage, tied to your Apple Account, not ours.</p>
         </section>
 
         <section aria-labelledby="notifications-title">
@@ -83,8 +84,25 @@
         </section>
 
         <section aria-labelledby="text-title">
-          <h2 id="text-title">The “text it home” feature</h2>
-          <p>When you turn a grade or assignment into a message, Keepr composes it on your device and hands it to the Messages app (or whatever app you choose) through iOS's standard share sheet. You review and send it yourself. Edvocates never sees, stores, or has access to that message.</p>
+          <h2 id="text-title">Messages and family sharing</h2>
+          <p>When you turn a grade or assignment into a message, Keepr puts it together on your device. You can send it as a text, through the Messages app or iOS's standard share sheet, or inside Keepr if your family shares. You review it and send it yourself. Keepr keeps a copy of what you sent on your phone, so you can see it later in the Messages tab.</p>
+          <p>Family sharing is optional. If a parent invites another parent or their student, Keepr uses Apple's iCloud (CloudKit) to share messages between the people who were invited. What's shared:</p>
+          <ul>
+            <li>The messages and replies people send in Keepr, with the time they were sent</li>
+            <li>What each message was about: the class names, assignment titles, and grade details on the card</li>
+            <li>The name each person chooses to show (like “Mom” or “Dad”), and whether they're using Keepr Parent or Keepr Student</li>
+          </ul>
+          <p>This is stored in the inviting parent's iCloud account and shared only with the people they invite. Edvocates can't read it. Grades themselves aren't shared this way; each parent's app reads them from Canvas with their own access.</p>
+        </section>
+
+        <section aria-labelledby="ai-title">
+          <h2 id="ai-title">Writing help (Apple Intelligence)</h2>
+          <p>On iPhones that support Apple Intelligence, “Write it for me” can draft a message for you. The draft is written by Apple's on-device model, using what's on the card. It isn't sent to Edvocates, and you can edit or delete the draft before anything is sent.</p>
+        </section>
+
+        <section aria-labelledby="subscription-title">
+          <h2 id="subscription-title">Subscriptions</h2>
+          <p>Keepr Parent is a subscription with a free trial, and Keepr Student is free. Purchases, trials, and renewals are handled by Apple through the App Store. Edvocates never receives your payment details. Keepr checks whether you're subscribed on your device, using Apple's StoreKit.</p>
         </section>
 
         <section aria-labelledby="sample-title">
@@ -100,14 +118,15 @@
 
         <section aria-labelledby="security-title">
           <h2 id="security-title">Security</h2>
-          <p>Keepr talks to Canvas over encrypted HTTPS connections and stores your access token in iOS's Keychain rather than in plain app storage. Because your data stays on your device, the main way to keep it secure is the same way you keep the rest of your phone secure: a passcode or Face ID/Touch ID, and keeping iOS up to date.</p>
+          <p>Keepr talks to Canvas over encrypted HTTPS connections and stores your access token in iOS's Keychain rather than in plain app storage. Because your data stays on your device (and, if you share with family, in iCloud), the main way to keep it secure is the same way you keep the rest of your phone secure: a passcode or Face ID/Touch ID, and keeping iOS up to date.</p>
         </section>
 
         <section aria-labelledby="control-title">
           <h2 id="control-title">Your choices</h2>
           <ul>
             <li><strong>Revoke access anytime.</strong> Delete the access token from your Canvas account settings, and Keepr immediately loses the ability to read anything new.</li>
-            <li><strong>Delete your data.</strong> Deleting the app removes everything Keepr stored on your phone. There's no account or server copy to separately ask us to delete.</li>
+            <li><strong>Delete your data.</strong> Deleting the app removes everything Keepr stored on your phone. There's no account or server copy to separately ask us to delete. Messages shared with family stay in iCloud until the parent who set up sharing stops sharing.</li>
+            <li><strong>Stop sharing.</strong> The parent who set up family sharing can remove someone or stop sharing entirely from Settings, and anyone who was invited can leave. Either way, it's done in the app.</li>
             <li><strong>Turn off notifications.</strong> Use iOS Settings to control what Keepr can alert you about, same as any other app.</li>
           </ul>
         </section>

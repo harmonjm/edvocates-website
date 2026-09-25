@@ -440,6 +440,29 @@ h2 + .lede { margin-top: 14px; }
 .feature:hover { transform: translateY(-3px) rotate(-.6deg); box-shadow: 6px 8px 0 rgba(26, 16, 51, .2); }
 .feature h3 { margin: 14px 0 6px; font-size: 21px; }
 .feature p { color: var(--ink-70); font-size: 16px; }
+/* "New" sits beside the feature's icon rather than under it. */
+.feature .emo:has(+ .label) { display: inline-grid; vertical-align: middle; }
+.feature .emo + .label { margin-left: 12px; padding: 5px 9px 3px; font-size: 12px; vertical-align: middle; }
+
+/* A few real screens, side by side, each with a line on what it's showing. */
+.tour {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 48px 28px;
+  margin-top: 48px;
+}
+.shot { margin: 0; text-align: center; }
+.shot .phone {
+  width: min(250px, 72vw);
+  padding: 8px;
+  border-radius: 44px;
+  box-shadow: 8px 10px 0 rgba(26, 16, 51, .16);
+}
+.shot .phone img { border-radius: 36px; }
+.shot:nth-child(odd) .phone { rotate: -1.8deg; }
+.shot:nth-child(even) .phone { rotate: 1.8deg; }
+.shot h3 { margin-top: 26px; font-size: 22px; }
+.shot p { max-width: 300px; margin: 6px auto 0; color: var(--ink-70); font-size: 16px; }
 
 .steps {
   display: grid;
