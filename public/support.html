@@ -35,18 +35,139 @@
     </div>
   </header>
 
-  <main id="main" class="support">
-    <div class="wrap">
+  <main id="main">
+    <section class="wrap support">
       <p class="eyebrow">Support</p>
       <h1>Need a hand?</h1>
-      <p class="lede">Stuck connecting Canvas, or something in Keepr looks off? Send us a note.</p>
-      <div class="support-card">
-        <span class="label">Email us</span>
-        <a class="support-email" href="mailto:support@edvocates.com">support@edvocates.com</a>
-        <p>Tell us which app you’re using, Keepr Parent or Keepr Student, and what’s going on.</p>
+      <p class="lede">Short how-to videos for the things people ask about most. Still stuck? Email us and a real person will help.</p>
+      <nav class="howto-nav" aria-label="How-to topics">
+        <a href="#start">Getting started</a>
+        <a href="#family">Family sharing</a>
+        <a href="#messages">Messages</a>
+        <a href="#alerts">Notifications</a>
+        <a href="#fix">Fixing things</a>
+      </nav>
+    </section>
+
+    <section class="section section--tight" id="start" aria-labelledby="start-title">
+      <div class="wrap">
+        <h2 id="start-title" class="howto-title">Getting started</h2>
+        <div class="howtos">
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/tour.mp4" poster="assets/video/tour.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: A quick tour of Keepr"></video></div>
+            <div class="howto__text"><h3>A quick tour of Keepr</h3><p>Home shows what needs a look for every kid. Kids has each class, Messages keeps every conversation, and Settings is where alerts and family sharing live.</p></div>
+          </article>
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/connect.mp4" poster="assets/video/connect.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Connect your school’s Canvas"></video></div>
+            <div class="howto__text"><h3>Connect your school’s Canvas</h3><p>Tap Connect Canvas and type your school’s Canvas address. Keepr opens Canvas so you can sign in and make an access token (Account → Settings → New Access Token). Copy it, come back, paste it in, and tap Continue. Keepr never sees your password.</p></div>
+          </article>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="section section--tight" id="family" aria-labelledby="family-title">
+      <div class="wrap">
+        <h2 id="family-title" class="howto-title">Family sharing</h2>
+        <div class="howtos">
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/coparent.mp4" poster="assets/video/coparent.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Add the other parent"></video></div>
+            <div class="howto__text"><h3>Add the other parent</h3><p>Open Settings, scroll to Sharing with Family, and tap Share with family. Send the invite however you like. Once they open it on their iPhone and install Keepr Parent, they show up as a Parent. They connect their own Canvas parent account for grades.</p></div>
+          </article>
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/addstudent.mp4" poster="assets/video/addstudent.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Add your student"></video></div>
+            <div class="howto__text"><h3>Add your student</h3><p>From the same spot, tap Add or remove people and invite your kid. They open the invite in Keepr Student and show up as a Student. On their phone, they see the whole family in Settings.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="messages" aria-labelledby="messages-title">
+      <div class="wrap">
+        <h2 id="messages-title" class="howto-title">Messages</h2>
+        <div class="howtos">
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/text.mp4" poster="assets/video/text.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Send a text about a grade"></video></div>
+            <div class="howto__text"><h3>Send a text about a grade</h3><p>Tap Text Maya (or Follow up) in Needs your attention. Keepr builds a card with the grades and missing work. Add a note, or tap Write a draft, then tap Open in Messages and pick who to send it to.</p></div>
+          </article>
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/keeprmsg.mp4" poster="assets/video/keeprmsg.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Send a message in Keepr"></video></div>
+            <div class="howto__text"><h3>Send a message in Keepr</h3><p>Once your kid has joined your family share, the send sheet offers “Maya is on Keepr.” Tap Send in Keepr and the message stays in the app. The reply comes back to the Messages tab, under your question.</p></div>
+          </article>
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/onetap.mp4" poster="assets/video/onetap.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Answer in one tap, or take it back"></video></div>
+            <div class="howto__text"><h3>Answer in one tap, or take it back</h3><p>Under a reply, tap 👍, Help?, Update?, or Talk tonight to answer without typing. Sent the wrong one? Tap Delete within 15 minutes and it’s gone for everyone.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="alerts" aria-labelledby="alerts-title">
+      <div class="wrap">
+        <h2 id="alerts-title" class="howto-title">Notifications</h2>
+        <div class="howtos">
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/notify.mp4" poster="assets/video/notify.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: How notifications work"></video></div>
+            <div class="howto__text"><h3>How notifications work</h3><p>Keepr checks Canvas in the background and taps you on the shoulder when a grade drops, work goes missing, a zero comes back, or your kid replies. Tap a notification to jump straight to it.</p></div>
+          </article>
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/alerts.mp4" poster="assets/video/alerts.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Choose what pings you, and when"></video></div>
+            <div class="howto__text"><h3>Choose what pings you, and when</h3><p>In Settings, pick which alerts you want, whether a class is flagged below a B, below a C, or only when failing, and when you hear about it: right away, or in a before-school note and an end-of-day recap. Quiet hours holds everything until they’re over.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="fix" aria-labelledby="fix-title">
+      <div class="wrap">
+        <h2 id="fix-title" class="howto-title">Fixing things</h2>
+        <div class="howtos">
+          <article class="howto">
+            <div class="phone phone--video"><video src="assets/video/fix.mp4" poster="assets/video/fix.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Keepr stopped updating"></video></div>
+            <div class="howto__text"><h3>Keepr stopped updating</h3><p>Canvas tokens can expire or get revoked. If a school says Fix instead of Manage, tap it and choose Update token. Make a new token in Canvas, paste it in, and your kids and settings stay just as they were.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="billing" aria-labelledby="billing-title">
+      <div class="wrap">
+        <h2 id="billing-title" class="howto-title">Trial &amp; subscription</h2>
+        <div class="faq">
+          <div class="faq__item"><h3>What does it cost?</h3><p>Keepr Parent is free for 14 days, then $5.99 a month or $39.99 a year. Keepr Student is free. You can look around with sample data for free, anytime.</p></div>
+          <div class="faq__item"><h3>How do I start the trial?</h3><p>Tap Connect Canvas and choose a plan. Apple asks you to confirm, and you won’t be charged until the 14 days are up.</p></div>
+          <div class="faq__item"><h3>How do I cancel?</h3><p>In Keepr, open Settings → Subscription → Manage subscription. You can also cancel in the iPhone Settings app under your name → Subscriptions. Cancel at least a day before the trial ends to avoid being charged.</p></div>
+          <div class="faq__item"><h3>I got a new phone</h3><p>Open Settings → Subscription and tap Restore Purchases. Then connect Canvas again with a new token.</p></div>
+          <div class="faq__item"><h3>Does the other parent need to pay?</h3><p>No. Someone you invite to family sharing can use it without their own subscription, and Family Sharing in the App Store can cover the whole household.</p></div>
+          <div class="faq__item"><h3>Remove someone or stop sharing</h3><p>The parent who set up sharing can tap Remove next to anyone in Settings → Sharing with Family, or tap Stop sharing. Anyone else can tap Leave this share.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section support" aria-labelledby="email-title">
+      <div class="wrap">
+        <h2 id="email-title" class="vh">Email support</h2>
+        <div class="support-card">
+          <span class="label">Email us</span>
+          <a class="support-email" href="mailto:support@edvocates.com">support@edvocates.com</a>
+          <p>Tell us which app you’re using, Keepr Parent or Keepr Student, and what’s going on.</p>
+        </div>
+      </div>
+    </section>
   </main>
+  <script>
+    // Play a how-to while it's on screen, pause it when it scrolls away.
+    (function () {
+      var videos = document.querySelectorAll('.howto video');
+      if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.preload = 'auto'; e.target.play().catch(function () {}); }
+          else e.target.pause();
+        });
+      }, { threshold: 0.6 });
+      videos.forEach(function (v) { io.observe(v); });
+    })();
+  </script>
 
   <footer class="site-footer">
     <div class="wrap">
