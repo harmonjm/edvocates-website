@@ -51,6 +51,7 @@
       <h1>Need a hand?</h1>
       <p class="lede">Short how-to videos for the things people ask about most. Still stuck? Email us and a real person will help.</p>
       <nav class="howto-nav" aria-label="How-to topics">
+        <a href="#questions">Questions</a>
         <a href="#start">Getting started</a>
         <a href="#planner">The Planner</a>
         <a href="#family">Family sharing</a>
@@ -58,21 +59,48 @@
         <a href="#alerts">Notifications</a>
         <a href="#fix">Fixing things</a>
       </nav>
+      <div class="questions" id="questions">
+        <h2 class="questions__title">Common questions</h2>
+        <label class="vh" for="q-search">Search questions</label>
+        <input class="questions__search" id="q-search" type="search" placeholder="Search, like “token” or “cancel”" autocomplete="off">
+        <ul class="questions__list" id="q-list">
+          <li><a href="#connect-parent" data-keys="set up sign in log in login token access token password start"><span class="q__text">How do I connect my school’s Canvas?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#connect-student" data-keys="kid child set up sign in log in login token student account"><span class="q__text">How does my student connect Canvas?</span><span class="q__tag q__tag--student">Student</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#tour" data-keys="tour tabs planner grades messages settings overview start"><span class="q__text">What’s where in Keepr?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#taking-the-zero" data-keys="ok not ok zero not turning it in approve decline missed"><span class="q__text">My kid says they’re taking the zero. Now what?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#check-off" data-keys="done turned in paper excused talked teacher checkbox remind"><span class="q__text">How do I check something off?</span><span class="q__tag q__tag--student">Student</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#streaks" data-keys="fire star streak homework b or better scoreboard got it pill"><span class="q__text">What are High Fives and streaks?</span><span class="q__tag q__tag--both">Both</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#calendar" data-keys="calendar countdown quarter end of q1 days left tests"><span class="q__text">How do I see the whole quarter?</span><span class="q__tag q__tag--both">Both</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#add-parent" data-keys="co-parent coparent mom dad share family invite sharing"><span class="q__text">How do I add the other parent?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#add-student" data-keys="kid child invite family sharing join student"><span class="q__text">How do I add my student?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#message" data-keys="text send message card write a draft missed late"><span class="q__text">How do I message my kid about missed work?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#one-tap" data-keys="reply thumbs up help update talk tonight delete undo"><span class="q__text">How do I answer fast, or delete a message?</span><span class="q__tag q__tag--both">Both</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#notifications" data-keys="alerts digest quiet hours ping notify before school end of day"><span class="q__text">How do I change notifications?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#fix-token" data-keys="fix update token expired revoked not syncing broken error"><span class="q__text">Keepr stopped updating. How do I fix it?</span><span class="q__tag q__tag--both">Both</span><span class="q__kind">▶ Video</span></a></li>
+          <li><a href="#cost" data-keys="price subscription free trial month year pay"><span class="q__text">What does it cost?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">Answer</span></a></li>
+          <li><a href="#start-trial" data-keys="trial subscribe subscription plan"><span class="q__text">How do I start the free trial?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">Answer</span></a></li>
+          <li><a href="#cancel" data-keys="cancel subscription stop paying refund"><span class="q__text">How do I cancel?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">Answer</span></a></li>
+          <li><a href="#new-phone" data-keys="new iphone restore purchases switch phone"><span class="q__text">I got a new phone.</span><span class="q__tag q__tag--both">Both</span><span class="q__kind">Answer</span></a></li>
+          <li><a href="#other-parent-pay" data-keys="co-parent family sharing subscription pay"><span class="q__text">Does the other parent need to pay?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">Answer</span></a></li>
+          <li><a href="#stop-sharing" data-keys="remove leave share stop sharing family"><span class="q__text">How do I remove someone or stop sharing?</span><span class="q__tag q__tag--parent">Parent</span><span class="q__kind">Answer</span></a></li>
+        </ul>
+        <p class="questions__none" id="q-none" hidden>No match. Email us at <a href="mailto:support@edvocates.com">support@edvocates.com</a> and we’ll help.</p>
+      </div>
     </section>
 
     <section class="section section--tight" id="start" aria-labelledby="start-title">
       <div class="wrap">
         <h2 id="start-title" class="howto-title">Getting started</h2>
         <div class="howtos">
-          <article class="howto">
+          <article class="howto" id="tour">
             <div class="phone phone--video"><video src="assets/video/tour.mp4" poster="assets/video/tour.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: A quick tour of Keepr"></video></div>
             <div class="howto__text"><h3>A quick tour of Keepr</h3><p>The Planner shows each kid’s missed work, what’s due next, and what they’ve already checked off. Switch kids with the buttons on top. Grades has their GPA and every class, Messages keeps every conversation, and Settings is where alerts and family sharing live.</p></div>
           </article>
-          <article class="howto">
+          <article class="howto" id="connect-parent">
             <div class="phone phone--video"><video src="assets/video/connect.mp4" poster="assets/video/connect.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: Connect your school’s Canvas in Keepr Parent"></video></div>
             <div class="howto__text"><h3>Connect your school’s Canvas (Keepr Parent)</h3><p>Tap Connect Canvas, type your school’s Canvas address, and tap Get a token from Canvas. Sign in with your Canvas parent login. Tap New Access Token, name it Keepr, pick a date, and tap Generate Token. Select the whole token, tap Copy, then tap Paste at the bottom and tap Continue. Keepr never sees your password.</p></div>
           </article>
-          <article class="howto">
+          <article class="howto" id="connect-student">
             <div class="phone phone--video"><video src="assets/video/connect-student.mp4" poster="assets/video/connect-student.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: Connect your school’s Canvas in Keepr Student"></video></div>
             <div class="howto__text"><h3>Connect your school’s Canvas (Keepr Student)</h3><p>Same steps, signed in as the student: tap Connect Canvas, type your school’s Canvas address, and tap Get a token from Canvas. Sign in with your own Canvas student login, make a new access token named Keepr, copy it, tap Paste, and tap Connect.</p></div>
           </article>
@@ -84,19 +112,19 @@
       <div class="wrap">
         <h2 id="planner-title" class="howto-title">The Planner</h2>
         <div class="howtos">
-          <article class="howto">
+          <article class="howto" id="taking-the-zero">
             <div class="phone phone--video"><video src="assets/video/takezero.mp4" poster="assets/video/takezero.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: When your kid says they’re taking the zero"></video></div>
             <div class="howto__text"><h3>When your kid says they’re taking the zero</h3><p>If your kid marks something “Not turning it in” in Keepr Student, it shows up on your planner with OK and Not OK. Tap OK and it moves to Settled on both phones. Tap Not OK and Keepr opens a message about it. Haven’t answered by the next day? Keepr reminds you.</p></div>
           </article>
-          <article class="howto">
+          <article class="howto" id="check-off">
             <div class="phone phone--video"><video src="assets/video/checkoff.mp4" poster="assets/video/checkoff.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: Check something off in Keepr Student"></video></div>
             <div class="howto__text"><h3>Check something off (Keepr Student)</h3><p>Tap the box next to anything on your planner and pick how it got done: in Canvas, on paper, excused, or you talked to your teacher. It stays crossed off today and goes away tomorrow. Not done yet? Tap ⋯ for a reminder, or to plan a talk with your teacher.</p></div>
           </article>
-          <article class="howto">
+          <article class="howto" id="streaks">
             <div class="phone phone--video"><video src="assets/video/streaks.mp4" poster="assets/video/streaks.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: High Fives and streaks"></video></div>
             <div class="howto__text"><h3>High Fives and streaks</h3><p>The scoreboard above the planner counts high fives, the homework streak (school days in a row it all got turned in), and the run of tests at a B or better. Tap the fire or the star for every day of a streak. Tap Got it and it folds into the pill next to the planner’s name; tap the pill to bring it back.</p></div>
           </article>
-          <article class="howto">
+          <article class="howto" id="calendar">
             <div class="phone phone--video"><video src="assets/video/calendar.mp4" poster="assets/video/calendar.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: The quarter calendar"></video></div>
             <div class="howto__text"><h3>The quarter calendar</h3><p>Tap “Q1 closes in 17 days” at the top of the Planner. Dots mark tests, big work, and missing work. Tap a day to see what was due, use the arrows for other months, and tap End of Q1 to jump to the quarter’s last day.</p></div>
           </article>
@@ -108,11 +136,11 @@
       <div class="wrap">
         <h2 id="family-title" class="howto-title">Family sharing</h2>
         <div class="howtos">
-          <article class="howto">
+          <article class="howto" id="add-parent">
             <div class="phone phone--video"><video src="assets/video/coparent.mp4" poster="assets/video/coparent.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Add the other parent"></video></div>
             <div class="howto__text"><h3>Add the other parent</h3><p>Open Settings, scroll to Sharing with Family, and tap Share with family. Send the invite however you like. Once they open it on their iPhone and install Keepr Parent, they show up as a Parent. They connect their own Canvas parent account for grades.</p></div>
           </article>
-          <article class="howto">
+          <article class="howto" id="add-student">
             <div class="phone phone--video"><video src="assets/video/addstudent.mp4" poster="assets/video/addstudent.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Add your student"></video></div>
             <div class="howto__text"><h3>Add your student</h3><p>From the same spot, tap Add or remove people and invite your kid. They open the invite in Keepr Student and show up as a Student. From then on, what they check off shows up on your planner, and they can answer your messages in Keepr.</p></div>
           </article>
@@ -124,11 +152,11 @@
       <div class="wrap">
         <h2 id="messages-title" class="howto-title">Messages</h2>
         <div class="howtos">
-          <article class="howto">
+          <article class="howto" id="message">
             <div class="phone phone--video"><video src="assets/video/text.mp4" poster="assets/video/text.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: Send a message about missed work"></video></div>
             <div class="howto__text"><h3>Send a message about missed work</h3><p>Tap Message on any planner section and pick the lines it’s about. Keepr builds a card with them. Add a note, or tap Write a draft, then send it. If your kid has joined your family share, tap Send in Keepr and the reply comes back to the Messages tab, under your question. Otherwise tap Open in Messages and send it as a text. Lots of old missed work? Tap Message about all.</p></div>
           </article>
-          <article class="howto">
+          <article class="howto" id="one-tap">
             <div class="phone phone--video"><video src="assets/video/onetap.mp4" poster="assets/video/onetap.jpg" width="600" height="1232" muted loop playsinline controls preload="none" aria-label="Video: Answer in one tap, or take it back"></video></div>
             <div class="howto__text"><h3>Answer in one tap, or take it back</h3><p>Under a reply, tap 👍, Help?, Update?, or Talk tonight to answer without typing. Sent the wrong one? Tap Delete within 15 minutes and it’s gone for everyone.</p></div>
           </article>
@@ -140,7 +168,7 @@
       <div class="wrap">
         <h2 id="alerts-title" class="howto-title">Notifications</h2>
         <div class="howtos">
-          <article class="howto">
+          <article class="howto" id="notifications">
             <div class="phone phone--video"><video src="assets/video/alerts.mp4" poster="assets/video/alerts.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: Choose what pings you, and when"></video></div>
             <div class="howto__text"><h3>Choose what pings you, and when</h3><p>Keepr checks Canvas in the background and tells you when a grade drops, work goes missing, a zero comes back, or your kid replies. In Settings → Notifications, pick Just the big stuff, Daily digests (a before-school note and an end-of-day list), or Tell me everything. Tap Fine-tune to choose each alert, when a class gets flagged, the digest times, and quiet hours.</p></div>
           </article>
@@ -152,7 +180,7 @@
       <div class="wrap">
         <h2 id="fix-title" class="howto-title">Fixing things</h2>
         <div class="howtos">
-          <article class="howto">
+          <article class="howto" id="fix-token">
             <div class="phone phone--video"><video src="assets/video/fix.mp4" poster="assets/video/fix.jpg" width="600" height="1304" muted loop playsinline controls preload="none" aria-label="Video: Keepr stopped updating"></video></div>
             <div class="howto__text"><h3>Keepr stopped updating</h3><p>Canvas tokens can expire or get revoked. If a school says Fix instead of Manage, tap it and choose Update token. Make a new token in Canvas, paste it in, and your kids and settings stay just as they were.</p></div>
           </article>
@@ -164,12 +192,12 @@
       <div class="wrap">
         <h2 id="billing-title" class="howto-title">Trial &amp; subscription</h2>
         <div class="faq">
-          <div class="faq__item"><h3>What does it cost?</h3><p>Keepr Parent is free for 14 days, then $5.99 a month or $39.99 a year. Keepr Student is free. You can explore with sample data for free, anytime.</p></div>
-          <div class="faq__item"><h3>How do I start the trial?</h3><p>Tap Connect Canvas and choose a plan. Apple asks you to confirm, and you won’t be charged until the 14 days are up.</p></div>
-          <div class="faq__item"><h3>How do I cancel?</h3><p>In Keepr, open Settings → Subscription → Manage subscription. You can also cancel in the iPhone Settings app under your name → Subscriptions. Cancel at least a day before the trial ends to avoid being charged.</p></div>
-          <div class="faq__item"><h3>I got a new phone</h3><p>Open Settings → Subscription and tap Restore Purchases. Then connect Canvas again with a new token.</p></div>
-          <div class="faq__item"><h3>Does the other parent need to pay?</h3><p>No. Someone you invite to family sharing can use it without their own subscription, and Family Sharing in the App Store can cover the whole household.</p></div>
-          <div class="faq__item"><h3>Remove someone or stop sharing</h3><p>The parent who set up sharing can tap Remove next to anyone in Settings → Sharing with Family, or tap Stop sharing. Anyone else can tap Leave this share.</p></div>
+          <div class="faq__item" id="cost"><h3>What does it cost?</h3><p>Keepr Parent is free for 14 days, then $5.99 a month or $39.99 a year. Keepr Student is free. You can explore with sample data for free, anytime.</p></div>
+          <div class="faq__item" id="start-trial"><h3>How do I start the trial?</h3><p>Tap Connect Canvas and choose a plan. Apple asks you to confirm, and you won’t be charged until the 14 days are up.</p></div>
+          <div class="faq__item" id="cancel"><h3>How do I cancel?</h3><p>In Keepr, open Settings → Subscription → Manage subscription. You can also cancel in the iPhone Settings app under your name → Subscriptions. Cancel at least a day before the trial ends to avoid being charged.</p></div>
+          <div class="faq__item" id="new-phone"><h3>I got a new phone</h3><p>Open Settings → Subscription and tap Restore Purchases. Then connect Canvas again with a new token.</p></div>
+          <div class="faq__item" id="other-parent-pay"><h3>Does the other parent need to pay?</h3><p>No. Someone you invite to family sharing can use it without their own subscription, and Family Sharing in the App Store can cover the whole household.</p></div>
+          <div class="faq__item" id="stop-sharing"><h3>Remove someone or stop sharing</h3><p>The parent who set up sharing can tap Remove next to anyone in Settings → Sharing with Family, or tap Stop sharing. Anyone else can tap Leave this share.</p></div>
         </div>
       </div>
     </section>
@@ -186,6 +214,50 @@
     </section>
   </main>
   <script>
+    // Search the question list.
+    (function () {
+      var input = document.getElementById('q-search'), items = document.querySelectorAll('#q-list li'), none = document.getElementById('q-none');
+      if (!input) return;
+      input.addEventListener('input', function () {
+        var words = input.value.toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
+        items.forEach(function (li) {
+          var a = li.firstElementChild, hay = (a.textContent + ' ' + a.dataset.keys).toLowerCase().replace(/[’']/g, '');
+          var hit = words.every(function (w) { return hay.indexOf(w.replace(/[’']/g, '')) !== -1; });
+          li.hidden = !hit; if (hit) shown++;
+        });
+        none.hidden = shown > 0;
+      });
+    })();
+
+    // A link to one how-to (/support#connect-student): flash it and play its video.
+    (function () {
+      function open() {
+        var el = location.hash && document.getElementById(location.hash.slice(1));
+        if (!el || !el.matches('.howto, .faq__item')) return;
+        el.classList.remove('is-linked'); void el.offsetWidth; el.classList.add('is-linked');
+        var v = el.querySelector('video');
+        if (v) { v.preload = 'auto'; v.currentTime = 0; v.play().catch(function () {}); }
+      }
+      window.addEventListener('hashchange', open);
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', open); else open();
+    })();
+
+    // A "Copy link" chip on each how-to and answer, for sending someone straight to it.
+    (function () {
+      if (!navigator.clipboard) return;
+      document.querySelectorAll('.howto[id] .howto__text, .faq__item[id]').forEach(function (box) {
+        var id = box.closest('[id]').id, b = document.createElement('button');
+        b.type = 'button'; b.className = 'copy-link'; b.textContent = 'Copy link';
+        b.setAttribute('aria-label', 'Copy a link to this');
+        b.addEventListener('click', function () {
+          navigator.clipboard.writeText(location.origin + location.pathname + '#' + id).then(function () {
+            b.textContent = 'Copied ✓'; setTimeout(function () { b.textContent = 'Copy link'; }, 1600);
+          });
+        });
+        box.appendChild(b);
+      });
+    })();
+
     // Play a how-to while it's on screen, pause it when it scrolls away.
     (function () {
       var videos = document.querySelectorAll('.howto video');
